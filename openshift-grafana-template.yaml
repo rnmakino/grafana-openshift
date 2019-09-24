@@ -172,7 +172,7 @@ objects:
     name: conf
   spec:
     accessModes:
-    - ReadWriteOncea
+    - ReadWriteOnce
     storageClassName: azure-standard
     resources:
       requests:
