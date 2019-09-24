@@ -168,10 +168,11 @@ objects:
 - apiVersion: v1
   kind: PersistentVolumeClaim
   metadata:
-    name: conf
+    name: azure-standard
   spec:
     accessModes:
-    - ReadWriteOnce
+    - ReadWriteOncea
+    storageClassName: managed-premium
     resources:
       requests:
         storage: ${VOLUME_SIZE}
