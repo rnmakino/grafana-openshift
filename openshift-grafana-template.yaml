@@ -32,7 +32,7 @@ objects:
     output:
       to:
         kind: ImageStreamTag
-        name: grafana:latest
+        name: grafana:0.2
     postCommit: {}
     resources: {}
     runPolicy: Serial

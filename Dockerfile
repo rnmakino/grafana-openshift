@@ -15,5 +15,6 @@ RUN /usr/bin/fix-permissions /usr/share/grafana \
     && /usr/bin/fix-permissions /var/lib/grafana \
     && /usr/bin/fix-permissions /var/log/grafana 
 
+RUN /usr/sbin/grafana-cli plugins install simpod-json-datasource
 WORKDIR /usr/share/grafana
 ENTRYPOINT ["./run.sh"]
